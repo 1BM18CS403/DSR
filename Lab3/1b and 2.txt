@@ -1,0 +1,29 @@
+1b)
+
+Baskets<-read.delim("Mar_Basket Software.csv", sep=",
+Baskets
+head(Baskets)
+colnames(Baskets)
+ncol(Baskets)
+Nrow(Baskets)
+Str(Baskets)
+vec<-c(3,2,3,2,3)
+Baskets<-cbind(Baskets.new_col=vec)
+Colnames(Baskets)
+
+
+2)
+
+Buff_tail<-c(10,1,37,5,2)
+Garden_bee<-c(8,3,9,6,4)
+Red_tail<-c(18,9,5,12,4)
+Carder_bee<-c(8,27,6,32,23)
+Honey_bee<-c(12,13,16,9,10)
+dat<-data.frame(Garden_bee,Carder_bee,Honey_bee)
+dat
+plants<-c('Thistle','Vipers','Golden Rain','Yellow Alfala','Blackberry')
+dmat<-as.matrix(dat)
+dmat
+rownames(dmat)<-plants
+dmat
+
