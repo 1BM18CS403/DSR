@@ -1,0 +1,9 @@
+num <- c(10, 20, 30, 40, 50)
+str <- c("Apple", "Mango", "Banana", "Grapes", "Orange")
+real_num <- c(10.3, 37.5, 25.4, 26.28, 3.6)
+
+list1 <- list(num, str, real_num)
+list1
+
+names(list1) <- c("Integer Number", "String", "Real Number")
+list1

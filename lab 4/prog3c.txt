@@ -1,0 +1,17 @@
+setwd("E:\DSR Lab\Lab4")
+getwd()
+churn
+churn$EstimatedSalary
+salary<-vector(mode="character",length=length(churn$EstimatedSalary))
+salary
+salary[churn$EstimatedSalary < 10000]<-"Low"
+salary
+salary[churn$EstimatedSalary >= 10000 & churn$EstimatedSalary < 100000]<-"Middle"
+salary[churn$EstimatedSalary > 100000]<-"High"
+salary
+
+spender<-factor(salary,levels=c("Low","Middle","High"), ordered=TRUE)
+spender
+churn<-cbind(churn,spender)
+churn
+write.csv(churn, file="E:/DSR Lab/Lab4/churn_output.csv")
