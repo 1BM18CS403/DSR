@@ -1,0 +1,16 @@
+install.packages("ggplot")
+library(ggplot2)
+
+x <- rnorm(100,mean = 0, sd = 1)
+x
+boxplot(x)
+
+y <- rnorm(100)
+y
+
+dat <- data.frame(cbind(x,y))
+dat
+
+ggplot() + geom_point(data = dat, aes(x=x, y=y), size = 3, color = "blue")
+
+boxplot(dat$x, dat$y, xlab = 'X-axis', ylab = 'Y-axis', col = "blue",size = 3)

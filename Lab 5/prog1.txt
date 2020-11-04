@@ -1,0 +1,8 @@
+EMPID <- c(01, 02, 03, 04, 05, 06, 07, 08, 09, 10)
+SALARY <- c(10000, 25000, 30000, 20000, 50000, 45000, 15000, 35000, 60000, 25000)
+MARTIAL_STATUS <- c("Married", "Bachelor", "Bachelor", "Married", "Bachelor", "Bachelor", "Married", "Married", "Bachelor", "Bachelor")
+
+dat <- data.frame(EMPID, SALARY, MARTIAL_STATUS)
+dat
+
+boxplot(data=dat, SALARY~MARTIAL_STATUS, col='green')
